@@ -7,7 +7,7 @@
 <!--  Fonts  -->
 <!--    CSS-->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/layout.css">
+<!--    <link rel="stylesheet" href="css/layout.css">-->
     
     </head>
     <body>
@@ -16,8 +16,8 @@
 <header class="page header">
   <div class="container clearfix"> 
      <div class="brand">
-        <img class="brand logo" src="img/Logo.png" alt="Waxom Logo" width="180">
-      <h1 class="brand name">Waxom Company</h1>   
+        <a class="brand_link"><img class="brand logo" src="img/Logo.png" alt="Waxom Logo" width="180"></a>
+      <h2 class="brand name vissually-hidden">Waxom</h2>   
     </div>
      <nav class="navigation wrapper">
          <ul class="navigation navigation-main">
@@ -44,7 +44,7 @@
 </div>
 </header> 
 <!-- /Page Header -->
-        <!--        Page Main-->
+<!--        Page Main-->
         <main class="page_content">
        <h1 class="visually-hidden">Waxom Company</h1>
        <!--Slider-->
@@ -52,88 +52,125 @@
          <h2 class="visually-hidden">Our offers</h2>
            <div class="slider">
               
-    <input type="radio" class="slider_switch" name="switch" id="slide-01" checked="checked">
-    <label class="slider_indicator" for="slide-01"></label>
-    <input type="radio" class="slider_switch" name="switch" id="slide-02">
-    <label class="slider_indicator" for="slide-02"></label>
-
-    <input type="radio" class="slider_switch" name="switch" id="slide-03">
-    <label class="slider_indicator" for="slide-03"></label>
-
-    <input type="radio" class="slider_switch" name="switch" id="slide-04">
-    <label class="slider_indicator" for="slide-04"></label>
-
-    <input type="radio" class="slider_switch" name="switch" id="slide-05">
-    <label class="slider_indicator" for="slide-05"></label>
-               
-               <div class=slider-wrapper>
-         <ul>
-                   
-             <li class="slider__slide slider_slide-01">
-             <p class="Waxom offers">
+    <input id="slide-01" type="radio" class="slider_switch" name="switch"  checked="checked">
+    <input id="slide-02" type="radio" class="slider_switch" name="switch" >
+    <input  id="slide-03" type="radio" class="slider_switch" name="switch" >
+    <input id="slide-04" type="radio" class="slider_switch" name="switch" >
+   <input  id="slide-05" type="radio" class="slider_switch" name="switch" id="slide-05">
+     <div class=slider-wrapper>
+         <ul class="slider_content container">
+          <li class="slider_slide slider_slide-01">
+             <p class="offers_slogan">
                <span> Unique and Modern Desing</span>
                            <br>
-                           
-               <strong> Portfolio PSD Template</strong>
+            <strong> Portfolio PSD Template</strong>
                            <br> 
                 Nam liber temporcum soluta nobiseleifend option congue nihil imperdiet doming id quod mazin placerat facer possim assum. 
                  </p>
-        <a class="" href="#">Get started</a>
+        <a class="btn btn-middle" href="#">Get started</a>
              </li>
-             <li class="slider__slide slider_slide-02">
-                 <p class="Waxom offers">
+             <li class="slider_slide slider_slide-02">
+                 <p class="offers_slogan">
                <span> Other text for slide number 2</span>
                            <br>
-                           
-               <strong> Portfolio PSD Template</strong>
+            <strong> Portfolio PSD Template</strong>
                            <br> 
                 Nam liber temporcum soluta nobiseleifend option congue nihil imperdiet doming id quod mazin placerat facer possim assum. 
                  </p>
-                 <a class="" href="#">Get started</a>
+                 <a class="btn btn-middle" href="#">Get started</a>
         </li>
-        
-        <li class="slider__slide slider_slide-03">
-                 <p class="Waxom offers">
+        <li class="slider_slide slider_slide-03">
+                 <p class="offers_slogan">
                <span> Other text for slide number 3</span>
                            <br>
-                           
-               <strong> Portfolio PSD Template</strong>
+            <strong> Portfolio PSD Template</strong>
                            <br> 
                 Nam liber temporcum soluta nobiseleifend option congue nihil imperdiet doming id quod mazin placerat facer possim assum. 
                  </p>
-                 <a class="" href="#">Get started</a>
+                 <a class="btn btn-middle" href="#">Get started</a>
         </li>
         <li class="slider__slide slider_slide-04">
-                 <p class="Waxom offers">
+                 <p class="offers_slogan">
                <span> Other text for slide number 4</span>
                            <br>
-                           
-               <strong> Portfolio PSD Template</strong>
+             <strong> Portfolio PSD Template</strong>
                            <br> 
                 Nam liber temporcum soluta nobiseleifend option congue nihil imperdiet doming id quod mazin placerat facer possim assum. 
                  </p>
-                 <a class="" href="#">Get started</a>
+                 <a class="btn btn-middle" href="#">Get started</a>
         </li>
-        
         <li class="slider__slide slider_slide-05">
-                 <p class="Waxom offers">
+                 <p class="offers_slogan">
                <span> Other text for slide number 5</span>
                            <br>
-                           
-               <strong> Portfolio PSD Template</strong>
+             <strong> Portfolio PSD Template</strong>
                            <br> 
                 Nam liber temporcum soluta nobiseleifend option congue nihil imperdiet doming id quod mazin placerat facer possim assum. 
                  </p>
-                 <a class="" href="#">Get started</a>
+                 <a class="btn btn-middle" href="#">Get started</a>
         </li>
         </ul>
-               </div>
-                <button type="button" id="prev">&lt;</button>
+     <label class="slider_indicator" for="slide-01"></label>
+     <label class="slider_indicator" for="slide-02"></label>
+     <label class="slider_indicator" for="slide-03"></label>
+     <label class="slider_indicator" for="slide-04"></label>
+     <label class="slider_indicator" for="slide-05"></label>        
+       </div>
+     <button type="button" class="slider_btn-prev">&lt;</button>
                 
-                <button type="button" id="next">&gt;</button>
+    <button type="button" class="slider_btn-next">&gt;</button>
                 </div>
                </section>
            <!--Slider-->
+<!--          Services  -->
+    <section class="servises">
+     <h2 class="visually-hidden">Our services</h2>
+     <ul class="services_list container">
+        <li class="services_item">
+         <a href="#">
+             <h3 class="services_title">Web & App Design</h3>
+             <p class="services_description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+            </a>
+         </li>
+    <li class="services_item">
+         <a href="#">
+             <h3 class="services_title">Development</h3>
+             <p class="services_description">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+        </a>
+         </li>
+         <li class="services_item">
+          <a href="#">
+            <h3 class="services_title">Customization</h3>
+            <p class="services_description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+          </a>
+        </li>
+        <li class="services_item">
+          <a href="#">
+            <h3 class="services_title">Marketing</h3>
+            <p class="services_description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+          </a>
+        </li>
+    </ul>
+</section>
+<!--    /Services -->
+            
+ <!-- Realization -->
+    <section class="realization">
+      <div class="container">
+        <h2 class="realization_title">Waxom  is realization of your ideas</h2>
+    <p class="realization_content">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+    </div>         
+    </section>      
+     <!-- /Realization --> 
+        <!-- Action -->    
+    <section class="action">
+     <div class="container">
+      <h2 class="action_title"><span>Waxom</span> Multipurpose WordPress Theme</h2> 
+         <p class="action_call">Don't Forget to Rate the Template. Thanks so much!</p>
+         <a href="#" class="btn btn-action">Purchase Now</a>
+    </div>
+</section>       
+  <!-- /Action -->    
         </main>  
     </body>
 </html>
